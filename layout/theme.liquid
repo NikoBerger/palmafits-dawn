@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
+    {% render 'google-tag-manager' %}
+    <meta name="facebook-domain-verification" content="0i0l6onc0ba2js8unvx5o725prxpl2">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -252,6 +254,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
@@ -283,9 +286,21 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+    <meta name="google-site-verification" content="iZFg3qqaVIc_N1_DXWTf0H8tHS893nFsUu8Ezfjy7x0">
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WNBJPVZ2"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -355,5 +370,52 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script>
+      function accGetCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+      }
+      }
+      return "";
+      }
+      function accSetCookie(cname, cvalue, exdays) {
+      const d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      let expires = "expires="+ d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+
+      let accChatOpened = accGetCookie("acc_chat_opened");
+      if (accChatOpened=="") {
+      var index=0;
+      setTimeout(function accCheckForChatNode() {
+      if (document.body.contains(document.getElementById('shopify-chat'))) {
+      setTimeout(accAdjustChatNotification, 300);
+      } else {
+      index += 1;
+      if (index < 20){setTimeout(accCheckForChatNode, 50);}
+      }
+      }, 50);
+      function accAdjustChatNotification() {
+      const accChatDiv = document.getElementById('shopify-chat');
+      accChatDiv.addEventListener('click', () => {
+      accSetCookie("acc_chat_opened","true","365");
+      });
+      const accNotification = document.getElementById('shopify-chat').childNodes[0].shadowRoot.childNodes[3].childNodes[0].childNodes[2];
+      if (accNotification.innerHTML=="1") {
+      accNotification.outerHTML="";
+      }
+      }
+      }
+    </script>
   </body>
 </html>

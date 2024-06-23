@@ -1,0 +1,80 @@
+/* Hide controls on slideshow */
+.slideshow__controls {
+  display: none;
+}
+
+/* Collection custom CSS */
+
+.title {
+  text-align: center;
+}
+
+.collection-hero__title,
+.collection-hero__text-wrapper {
+  text-align: center;
+}
+.collection-hero__description {
+  margin: auto;
+}
+
+aside#main-collection-filters {
+  margin-bottom: 30px;
+}
+
+/* Product page custom CSS */
+
+.product__tax {
+  display: none;
+}
+
+.product__title h1 {
+  font-size: 3rem;
+}
+
+.product__description,
+.accordion__content {
+  font-size: small;
+}
+
+.product__size-guide .rte table {
+  width: 100%;
+  border-style: inherit;
+  box-shadow: none;
+}
+
+.related-products {
+  border-top: 1px solid #efefef;
+}
+
+.related-products__heading {
+  text-align: center;
+}
+
+.product__info-container .price-item {
+  color: #6b705c;
+  font-size: 2rem;
+}
+
+.product__subtitle h3 {
+  color: #6b705c;
+  font-size: 1.5rem;
+}
+
+/* Font-styling */
+
+.card__information,
+.product__title {
+  text-transform: uppercase;
+}
+
+.price-item {
+  color: #6b705c;
+}
+
+/* Header menu styling */
+
+[id*="view-all"] {
+  text-decoration: underline;
+  font-size: 80%;
+  margin-top: 20px;
+}

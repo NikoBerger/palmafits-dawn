@@ -14,17 +14,17 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_77eV7W": {
+          "type": "announcement",
+          "settings": {
+            "text": "Danish Brand, Mediterranean Vibes",
+            "link": ""
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
             "text": "Shipping from Europe",
-            "link": ""
-          }
-        },
-        "announcement_7DDxhM": {
-          "type": "announcement",
-          "settings": {
-            "text": "Inspired by the Sun, the Sea and the Mediterranean Vibes!",
             "link": ""
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "block_order": [
+        "announcement_77eV7W",
         "announcement-bar-0",
-        "announcement_7DDxhM",
         "announcement_Yxd7KL"
       ],
       "settings": {

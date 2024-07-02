@@ -14,33 +14,32 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "text_qCiyYQ": {
-          "type": "text",
-          "settings": {
-            "heading": "<strong>Contact Us<\/strong>",
-            "subtext": "<p>palma fits.<\/p><p><a href=\"mailto:mail@palmafits.com\" title=\"mail@palmafits.com\">mail@palmafits.com<\/a><\/p><p>VAT: DK38338501<\/p>"
-          }
-        },
         "link_list_BTrN3P": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "main-menu"
+            "heading": "Information",
+            "menu": "footer"
           }
         },
-        "image_8hbhdp": {
-          "type": "image",
+        "text_waaajw": {
+          "type": "text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/palmafits_image_logo_grey.png",
-            "image_width": 100,
-            "alignment": "center"
+            "heading": "palma fits.",
+            "subtext": "<p><a href=\"mailto:mail@palmafits.com\" title=\"Palma Fits Email\">mail@palmafits.com<\/a><\/p><p>VAT: DK-38338501<\/p>"
+          }
+        },
+        "text_qCiyYQ": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Need Help?<\/strong>",
+            "subtext": "<p>Contact us at <a href=\"mailto:mail@palmafits.com\" title=\"Palma Fits Email\">mail@palmafits.com<\/a> to get an answer on the same day.<\/p><p>You can also get in touch on <a href=\"https:\/\/instagram.com\/palmafits\" title=\"Palma Fits Instagram Link\">Instagram<\/a>.<\/p>"
           }
         }
       },
       "block_order": [
-        "text_qCiyYQ",
         "link_list_BTrN3P",
-        "image_8hbhdp"
+        "text_waaajw",
+        "text_qCiyYQ"
       ],
       "custom_css": [
         "@media only screen and (max-width: 600px) {.footer {text-align: center; } .list-menu__item {justify-content: center; }}"
@@ -51,7 +50,7 @@
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": false,
         "show_social": true,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": true,

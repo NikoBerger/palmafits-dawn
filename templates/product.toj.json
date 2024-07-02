@@ -113,47 +113,6 @@
         "padding_bottom": 44
       }
     },
-    "image_with_text_WqXmq6": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_fUnVEe": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our Philosophy",
-            "heading_size": "h2"
-          }
-        },
-        "text_ELBnTb": {
-          "type": "text",
-          "settings": {
-            "text": "<p>This product is made especially for you as soon as you place an order, which is why it takes us a bit longer to deliver it to you. Making products on demand instead of in bulk helps reduce overproduction, so thank you for making thoughtful purchasing decisions!<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_fUnVEe",
-        "text_ELBnTb"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Premium-Cotton-Tshirt-preparing-for-printing-3.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-2",
-        "color_scheme": "scheme-2",
-        "image_behavior": "ambient",
-        "mobile_content_alignment": "left",
-        "padding_top": 84,
-        "padding_bottom": 84
-      }
-    },
     "171580066238f7463f": {
       "type": "apps",
       "disabled": true,
@@ -165,7 +124,6 @@
   "order": [
     "main",
     "related-products",
-    "image_with_text_WqXmq6",
     "171580066238f7463f"
   ]
 }

@@ -18,7 +18,8 @@
       </h1>
 
       {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
+        {%- assign textParts = collection.description | split: '%%%' -%}
+        <div class="collection-hero__description rte">{{ textParts | first }}</div>
       {%- endif -%}
     </div>
 

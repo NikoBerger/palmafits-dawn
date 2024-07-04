@@ -3,8 +3,6 @@
   <head>
     {% render 'cookiebot' %}
     {% render 'cookiebot-google-consent-mode-script' %}
-    {% render 'google-tag-manager' %}
-    {% render 'google-tag' %}
     <meta name="facebook-domain-verification" content="0i0l6onc0ba2js8unvx5o725prxpl2">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -295,8 +293,6 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-    {% render 'google-tag-manager-body-tag' %}
-
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>

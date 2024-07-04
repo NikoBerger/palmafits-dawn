@@ -1,0 +1,208 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_eYP38d": {
+      "type": "rich-text",
+      "blocks": {
+        "text_BxeJjJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to Palma Fits —where the sun always shines, and time moves at its own pace. Picture this: you're strolling along a cobblestone street, a gentle breeze tousling your hair as you soak in the vibrant colors and carefree atmosphere of the Mediterranean. That's the feeling we aim to capture in everything we do!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_BxeJjJ"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_kp39mW": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_JGRQJH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you're lounging by the beach, exploring hidden gems in the city, or simply savoring a leisurely meal with loved ones, our products are designed to be your perfect companions on your laid-back adventures.<\/p><p><strong>Welcome to the Palma Fits family—where the sun never sets on good vibes and summer feels!<\/strong><\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_JGRQJH"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/a-mediterranean-scene-with-terracotta-pot.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-156a7a51-45fd-453d-b725-d895e3b452ce",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 72
+      }
+    },
+    "rich_text_mBAQwj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4YQWFL": {
+          "type": "heading",
+          "settings": {
+            "heading": "The process",
+            "heading_size": "h1"
+          }
+        },
+        "text_34UPkf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We do things a bit different, so let's chalk up the basics<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4YQWFL",
+        "text_34UPkf"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_NFJGBt": {
+      "type": "multirow",
+      "blocks": {
+        "row_4JmtdH": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/online-shopping.jpg",
+            "caption": "Step 1",
+            "heading": "Placing an order",
+            "text": "<p>It's just like your typical online shopping experience. Once you've found your must-haves, simply place your order, and we'll take care of the rest!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_Hkd8KN": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/003-printing-on-white.jpg",
+            "caption": "Step 2",
+            "heading": "Printing the items",
+            "text": "<p>We don't believe in mass production  and fast-fashion – each item is lovingly crafted only after you've placed your order. Sure, it takes a tad longer, but hey, good things come to those who wait, right?<\/p><p>This step typically takes 3-5 business days, but trust us, it's worth it!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_x3Mett": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shipping-boxes-on-red-brick.jpg",
+            "caption": "Step 3",
+            "heading": "Delivering your order",
+            "text": "<p>Your order zips off to you directly from our printing pals located within the European Union, helping us keep our product's carbon footprint low.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_4JmtdH",
+        "row_Hkd8KN",
+        "row_x3Mett"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 72
+      }
+    },
+    "collection_list_NJBxEm": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_tG3376": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "clothing"
+          }
+        },
+        "featured_collection_MLpKqk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "swimwear"
+          }
+        },
+        "featured_collection_rjgP6y": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_tG3376",
+        "featured_collection_MLpKqk",
+        "featured_collection_rjgP6y"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_eYP38d",
+    "image_with_text_kp39mW",
+    "rich_text_mBAQwj",
+    "multirow_NFJGBt",
+    "collection_list_NJBxEm"
+  ]
+}

@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
+    {% render 'cookiebot' %}
     {% render 'cookiebot-google-consent-mode-script' %}
     {% render 'google-tag-manager' %}
     {% render 'google-tag' %}

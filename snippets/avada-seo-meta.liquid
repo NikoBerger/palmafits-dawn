@@ -1,0 +1,27 @@
+{%- if request.page_type == 'product' -%}
+{%- unless avada_seo_ovr_product_ids contains product.id -%}
+{%- capture avada_seo_meta_title -%}{{ product.title }} | {{ shop.name }}{%- endcapture -%}
+{%- capture avada_seo_meta_description -%}Check out out the {{ product.title }} at {{ shop.name }}. Danish design and Mediterranean vibes!{%- endcapture -%}
+{%- endunless -%}
+{%- endif -%}
+{%- if request.page_type == 'collection' -%}
+{%- unless avada_seo_ovr_collection_ids contains collection.id -%}
+{%- capture avada_seo_meta_title -%}{{ collection.title }}  | {{ shop.name }}{%- endcapture -%}
+{%- capture avada_seo_meta_description -%}Check out out our variety of {{ collection.title }} at {{ shop.name }}. Danish design and Mediterranean vibes!{%- endcapture -%}
+{%- endunless -%}
+{%- endif -%}
+{%- if request.page_type == 'article' -%}
+{%- unless avada_seo_ovr_article_ids contains article.id -%}
+{%- capture avada_seo_meta_title -%}{{ article.title }} | {{ shop.name }}{%- endcapture -%}
+{%- capture avada_seo_meta_description -%}{{ article.excerpt_or_content }}{%- endcapture -%}
+{%- endunless -%}
+{%- endif -%}
+{%- if avada_seo_meta_title -%}
+{%- assign seo_title = avada_seo_meta_title | strip_html | strip -%}
+{%- assign page_title = seo_title -%}
+{%- assign og_title = seo_title -%}
+{%- endif -%}
+{%- if avada_seo_meta_description -%}
+{%- assign page_description = avada_seo_meta_description | strip_html | strip -%}
+{%- assign og_description = page_description -%}
+{%- endif -%}

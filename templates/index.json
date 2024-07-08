@@ -15,15 +15,15 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Mediterranean Vibes",
-            "heading_size": "h0"
+            "heading": "Danish Design, Mediterranean Soul",
+            "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Palma Fits is a Danish clothing company inspired by the warm vibes and cool breeze of the Mediterranean lifestyle.",
-            "text_style": "body"
+            "text": "We are a Danish clothing company inspired by the warm vibes of the Mediterranean lifestyle",
+            "text_style": "subtitle"
           }
         },
         "button": {

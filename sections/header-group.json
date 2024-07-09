@@ -17,7 +17,7 @@
         "announcement_77eV7W": {
           "type": "announcement",
           "settings": {
-            "text": "Danish Brand, Mediterranean Vibes",
+            "text": "Danish Design. Mediterranean Soul. 🌊",
             "link": ""
           }
         },
@@ -27,11 +27,19 @@
             "text": "5-11 business days delivery time",
             "link": ""
           }
+        },
+        "announcement_4QhXbR": {
+          "type": "announcement",
+          "settings": {
+            "text": "Save 15%! Use Code ‘HelloSummer’ 🌴",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement_77eV7W",
-        "announcement_Yxd7KL"
+        "announcement_Yxd7KL",
+        "announcement_4QhXbR"
       ],
       "settings": {
         "color_scheme": "scheme-5",

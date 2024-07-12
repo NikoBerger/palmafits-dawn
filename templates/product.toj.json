@@ -41,17 +41,16 @@
             "show_gift_card_recipient": false
           }
         },
-        "icon_with_text_LkFJFq": {
+        "icon_with_text_zkTzkw": {
           "type": "icon-with-text",
-          "disabled": true,
           "settings": {
-            "layout": "horizontal",
-            "icon_1": "box",
-            "heading_1": "Heading",
-            "icon_2": "return",
-            "heading_2": "Heading",
-            "icon_3": "truck",
-            "heading_3": "Heading"
+            "layout": "vertical",
+            "icon_1": "truck",
+            "heading_1": "Delivery: 5-11 business days",
+            "icon_2": "price_tag",
+            "heading_2": "Shipping from €7",
+            "icon_3": "return",
+            "heading_3": "30 days return"
           }
         },
         "description": {
@@ -82,7 +81,7 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "icon_with_text_LkFJFq",
+        "icon_with_text_zkTzkw",
         "description",
         "size_guide_cVTUNf",
         "collapsible_tab_NMQRRP"

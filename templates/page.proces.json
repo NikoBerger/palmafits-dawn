@@ -16,88 +16,6 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_eYP38d": {
-      "type": "rich-text",
-      "blocks": {
-        "text_BxeJjJ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Welcome to Palma Fits —where the sun always shines, and time moves at its own pace. Picture this: you're strolling along a cobblestone street, a gentle breeze tousling your hair as you soak in the vibrant colors and carefree atmosphere of the Mediterranean. That's the feeling we aim to capture in everything we do!<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_BxeJjJ"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 52
-      }
-    },
-    "image_with_text_kp39mW": {
-      "type": "image-with-text",
-      "blocks": {
-        "text_JGRQJH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Whether you're lounging by the beach, exploring hidden gems in the city, or simply savoring a leisurely meal with loved ones, our products are designed to be your perfect companions on your laid-back adventures.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "text_JGRQJH"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/a-mediterranean-scene-with-terracotta-pot.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-156a7a51-45fd-453d-b725-d895e3b452ce",
-        "image_behavior": "ambient",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 72
-      }
-    },
-    "rich_text_mBAQwj": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_4YQWFL": {
-          "type": "heading",
-          "settings": {
-            "heading": "The process",
-            "heading_size": "h1"
-          }
-        },
-        "text_34UPkf": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We do things a bit different, so let's chalk up the basics<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_4YQWFL",
-        "text_34UPkf"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 72,
-        "padding_bottom": 0
-      }
-    },
     "multirow_NFJGBt": {
       "type": "multirow",
       "blocks": {
@@ -144,16 +62,58 @@
         "image_height": "medium",
         "desktop_image_width": "medium",
         "heading_size": "h2",
-        "text_style": "body",
+        "text_style": "subtitle",
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "image_layout": "alternate-left",
-        "section_color_scheme": "scheme-2",
+        "section_color_scheme": "scheme-1",
         "row_color_scheme": "scheme-2",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 72
+      }
+    },
+    "rich_text_7pBP83": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_P9tgFx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Delivery Times",
+            "heading_size": "h1"
+          }
+        },
+        "text_9FYaxX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We keep it real with you – because we craft each piece only when ordered, it might take a tad longer to arrive. But trust us, the wait is worth it. We’re always looking af things behind the scenes to bring down the delivery time.<\/p>"
+          }
+        },
+        "button_LcUzhy": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about deliveries",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_P9tgFx",
+        "text_9FYaxX",
+        "button_LcUzhy"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "collection_list_NJBxEm": {
@@ -199,10 +159,8 @@
   },
   "order": [
     "main",
-    "rich_text_eYP38d",
-    "image_with_text_kp39mW",
-    "rich_text_mBAQwj",
     "multirow_NFJGBt",
+    "rich_text_7pBP83",
     "collection_list_NJBxEm"
   ]
 }

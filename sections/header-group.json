@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_4QhXbR": {
+          "type": "announcement",
+          "settings": {
+            "text": "Save 15%! Use Code ‘HelloSummer’ 🌴",
+            "link": ""
+          }
+        },
         "announcement_77eV7W": {
           "type": "announcement",
           "settings": {
@@ -27,19 +34,12 @@
             "text": "5-11 business days delivery time 🚚",
             "link": ""
           }
-        },
-        "announcement_4QhXbR": {
-          "type": "announcement",
-          "settings": {
-            "text": "Save 15%! Use Code ‘HelloSummer’ 🌴",
-            "link": ""
-          }
         }
       },
       "block_order": [
+        "announcement_4QhXbR",
         "announcement_77eV7W",
-        "announcement_Yxd7KL",
-        "announcement_4QhXbR"
+        "announcement_Yxd7KL"
       ],
       "settings": {
         "color_scheme": "scheme-5",

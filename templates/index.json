@@ -91,7 +91,7 @@
         "heading_KWRcMh": {
           "type": "heading",
           "settings": {
-            "heading": "Our journey",
+            "heading": "Aboud Us",
             "heading_size": "h1"
           }
         },
@@ -218,6 +218,7 @@
         "heading_yEwNe8",
         "text_dCJABE"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/002-into-the-printer.jpg",
         "height": "adapt",

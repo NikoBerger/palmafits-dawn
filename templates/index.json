@@ -158,27 +158,13 @@
           "settings": {
             "collection": "bags"
           }
-        },
-        "featured_collection_LTnPEU": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "shoes"
-          }
-        },
-        "featured_collection_4Uq468": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "phone-covers"
-          }
         }
       },
       "block_order": [
         "featured_collection_3iLree",
         "featured_collection_rrVLUM",
         "featured_collection_yPW3Te",
-        "featured_collection_PDf9nR",
-        "featured_collection_LTnPEU",
-        "featured_collection_4Uq468"
+        "featured_collection_PDf9nR"
       ],
       "custom_css": [
 
@@ -187,51 +173,12 @@
         "title": "Discover our range of products",
         "heading_size": "h2",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 68,
-        "padding_bottom": 68
-      }
-    },
-    "image_with_text_Fyt9w4": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_yEwNe8": {
-          "type": "heading",
-          "settings": {
-            "heading": "Embracing Slow-Fashion",
-            "heading_size": "h2"
-          }
-        },
-        "text_dCJABE": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At <strong>palma fits<\/strong>, we're proud to embrace a different approach to fashion. We believe in quality over quantity, and that's why we've chosen to stray from the fast-fashion model. Instead of mass-producing items that may end up going to waste, we've adopted a made-to-order philosophy.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_yEwNe8",
-        "text_dCJABE"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/002-into-the-printer.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "overlap",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-5",
-        "image_behavior": "ambient",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
         "padding_bottom": 68
       }
     }
@@ -240,7 +187,6 @@
     "image_banner",
     "featured_collection",
     "image_with_text_xtPDhW",
-    "collection_list_Ug9mH6",
-    "image_with_text_Fyt9w4"
+    "collection_list_Ug9mH6"
   ]
 }

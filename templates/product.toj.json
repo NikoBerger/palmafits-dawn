@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,18 +14,15 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "subtitle_gq9ABD": {
           "type": "subtitle",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -55,8 +52,7 @@
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "size_guide_cVTUNf": {
           "type": "size_guide",
@@ -70,7 +66,7 @@
           "settings": {
             "heading": "Delivery",
             "icon": "truck",
-            "content": "<p>We make the product when you order it. Usually, it takes 3–5 days to fulfill an order, after which it’s shipped out. The shipping timedepends on your location, but an estimate for European delivery is 6–8 business days.<\/p>",
+            "content": "<p>We make the product when you order it. Usually, it takes 3–5 days to fulfill an order, after which it’s shipped out. The shipping timedepends on your location, but an estimate for European delivery is 6–8 business days.</p>",
             "page": ""
           }
         }
@@ -112,9 +108,7 @@
     },
     "related-products": {
       "type": "related-products",
-      "custom_css": [
-        ".related-products {border-top: 1px solid #efefef;}"
-      ],
+      "custom_css": [".related-products {border-top: 1px solid #efefef;}"],
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -132,8 +126,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "related-products"
-  ]
+  "order": ["main", "related-products"]
 }

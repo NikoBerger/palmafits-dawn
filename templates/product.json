@@ -83,7 +83,7 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
@@ -91,7 +91,7 @@
         "enable_video_looping": true,
         "padding_top": 36,
         "padding_bottom": 12,
-        "enable_group_media": false,
+        "enable_group_media": true,
         "media_grouping_option": "Color"
       }
     },

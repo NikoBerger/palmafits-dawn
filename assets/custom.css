@@ -73,7 +73,7 @@ aside#main-collection-filters {
 
 /* Header menu styling */
 
-[id*="view-all"] {
+[id*='view-all'] {
   text-decoration: underline;
   font-size: 80%;
   margin-top: 20px;

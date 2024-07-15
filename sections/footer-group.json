@@ -1,16 +1,53 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "newsletter_3nKQH3": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_Qczk3a": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_i8wHrD": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email_form_kX636P": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_Qczk3a",
+        "paragraph_i8wHrD",
+        "email_form_kX636P"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -25,18 +62,22 @@
           "type": "text",
           "settings": {
             "heading": "palma fits.",
-            "subtext": "<p><a href=\"mailto:mail@palmafits.com\" title=\"Palma Fits Email\">mail@palmafits.com</a></p><p>VAT: DK-38338501</p>"
+            "subtext": "<p><a href=\"mailto:mail@palmafits.com\" title=\"Palma Fits Email\">mail@palmafits.com<\/a><\/p><p>VAT: DK-38338501<\/p>"
           }
         },
         "text_qCiyYQ": {
           "type": "text",
           "settings": {
-            "heading": "<strong>Need Help?</strong>",
-            "subtext": "<p>Contact us at <a href=\"mailto:mail@palmafits.com\" title=\"Palma Fits Email\">mail@palmafits.com</a> to get an answer on the same day.</p><p>You can also get in touch on <a href=\"https://instagram.com/palmafits\" title=\"Palma Fits Instagram Link\">Instagram</a>.</p>"
+            "heading": "<strong>Need Help?<\/strong>",
+            "subtext": "<p>Contact us at <a href=\"mailto:mail@palmafits.com\" title=\"Palma Fits Email\">mail@palmafits.com<\/a> to get an answer on the same day.<\/p><p>You can also get in touch on <a href=\"https:\/\/instagram.com\/palmafits\" title=\"Palma Fits Instagram Link\">Instagram<\/a>.<\/p>"
           }
         }
       },
-      "block_order": ["link_list_BTrN3P", "text_waaajw", "text_qCiyYQ"],
+      "block_order": [
+        "link_list_BTrN3P",
+        "text_waaajw",
+        "text_qCiyYQ"
+      ],
       "custom_css": [
         "@media only screen and (max-width: 600px) {.footer {text-align: center; } .list-menu__item {justify-content: center; }}"
       ],
@@ -56,5 +97,8 @@
       }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "newsletter_3nKQH3",
+    "footer"
+  ]
 }

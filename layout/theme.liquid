@@ -1,9 +1,9 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
-	<!-- Added by AVADA SEO Suite -->
-	{% include 'avada-seo' %}
-	<!-- /Added by AVADA SEO Suite -->
+    <!-- Added by AVADA SEO Suite -->
+    {% include 'avada-seo' %}
+    <!-- /Added by AVADA SEO Suite -->
     {% render 'cookiebot' %}
     {% render 'google-tag-manager-head' %}
     {% render 'cookiebot-google-consent-mode-script' %}
@@ -38,6 +38,10 @@
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
+
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
@@ -262,6 +266,15 @@
 
     {{ 'custom.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+
+    {%- if settings.cart_type == 'drawer' -%}
+      {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+      {{ 'component-cart.css' | asset_url | stylesheet_tag }}
+      {{ 'component-totals.css' | asset_url | stylesheet_tag }}
+      {{ 'component-price.css' | asset_url | stylesheet_tag }}
+      {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+    {%- endif -%}
 
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
@@ -311,7 +324,7 @@
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
-    
+
     {% sections 'footer-group' %}
 
     <ul hidden>
@@ -370,50 +383,58 @@
 
     <script>
       function accGetCookie(cname) {
-      let name = cname + "=";
-      let decodedCookie = decodeURIComponent(document.cookie);
-      let ca = decodedCookie.split(';');
-      for(let i = 0; i <ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-      }
-      }
-      return "";
+        let name = cname + '=';
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return '';
       }
       function accSetCookie(cname, cvalue, exdays) {
-      const d = new Date();
-      d.setTime(d.getTime() + (exdays*24*60*60*1000));
-      let expires = "expires="+ d.toUTCString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        const d = new Date();
+        d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+        let expires = 'expires=' + d.toUTCString();
+        document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
       }
 
-      let accChatOpened = accGetCookie("acc_chat_opened");
-      if (accChatOpened=="") {
-      var index=0;
-      setTimeout(function accCheckForChatNode() {
-      if (document.body.contains(document.getElementById('shopify-chat'))) {
-      setTimeout(accAdjustChatNotification, 300);
-      } else {
-      index += 1;
-      if (index < 20){setTimeout(accCheckForChatNode, 50);}
-      }
-      }, 50);
-      function accAdjustChatNotification() {
-      const accChatDiv = document.getElementById('shopify-chat');
-      accChatDiv.addEventListener('click', () => {
-      accSetCookie("acc_chat_opened","true","365");
-      });
-      const accNotification = document.getElementById('shopify-chat').childNodes[0].shadowRoot.childNodes[3].childNodes[0].childNodes[2];
-      if (accNotification.innerHTML=="1") {
-      accNotification.outerHTML="";
-      }
-      }
+      let accChatOpened = accGetCookie('acc_chat_opened');
+      if (accChatOpened == '') {
+        var index = 0;
+        setTimeout(function accCheckForChatNode() {
+          if (document.body.contains(document.getElementById('shopify-chat'))) {
+            setTimeout(accAdjustChatNotification, 300);
+          } else {
+            index += 1;
+            if (index < 20) {
+              setTimeout(accCheckForChatNode, 50);
+            }
+          }
+        }, 50);
+        function accAdjustChatNotification() {
+          const accChatDiv = document.getElementById('shopify-chat');
+          accChatDiv.addEventListener('click', () => {
+            accSetCookie('acc_chat_opened', 'true', '365');
+          });
+          const accNotification =
+            document.getElementById('shopify-chat').childNodes[0].shadowRoot.childNodes[3].childNodes[0].childNodes[2];
+          if (accNotification.innerHTML == '1') {
+            accNotification.outerHTML = '';
+          }
+        }
       }
     </script>
-    <script type="text/plain" src="https://partnertrackshopify.dk/js/register.js" async data-cookieconsent="marketing"></script>
+    <script
+      type="text/plain"
+      src="https://partnertrackshopify.dk/js/register.js"
+      async
+      data-cookieconsent="marketing"
+    ></script>
   </body>
 </html>

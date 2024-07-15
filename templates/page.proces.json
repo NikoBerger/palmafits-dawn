@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -22,7 +22,7 @@
         "row_4JmtdH": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/online-shopping.jpg",
+            "image": "shopify://shop_images/online-shopping.jpg",
             "caption": "Step 1",
             "heading": "Afgivelse af en ordre",
             "text": "<p>Det er ligesom din typiske online shopping-oplevelse. Når du har fundet dine must-haves, skal du blot afgive din bestilling, så tager vi os af resten!<\/p>",
@@ -33,7 +33,7 @@
         "row_Hkd8KN": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/003-printing-on-white.jpg",
+            "image": "shopify://shop_images/003-printing-on-white.jpg",
             "caption": "Step 2",
             "heading": "Produktion",
             "text": "<p>Vi er imod masseproduktion og fast-fashion - hver enkelt vare bliver først produceret, når du har afgivet din ordre. Det tager selvfølgelig lidt længere tid, men gode ting kommer til dem, der venter. Det tager typisk 3-5 arbejdsdage, men det er helt klart ventetiden værd!<\/p>",
@@ -44,7 +44,7 @@
         "row_x3Mett": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shipping-boxes-on-red-brick.jpg",
+            "image": "shopify://shop_images/shipping-boxes-on-red-brick.jpg",
             "caption": "Step 3",
             "heading": "Levering af din ordre",
             "text": "<p>Din ordre sendes direkte til dig fra vores leverandører i EU, hvilket hjælper os med at holde vores produkters CO2-fodaftryk nede.<\/p>",
@@ -53,11 +53,7 @@
           }
         }
       },
-      "block_order": [
-        "row_4JmtdH",
-        "row_Hkd8KN",
-        "row_x3Mett"
-      ],
+      "block_order": ["row_4JmtdH", "row_Hkd8KN", "row_x3Mett"],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -103,11 +99,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_P9tgFx",
-        "text_9FYaxX",
-        "button_LcUzhy"
-      ],
+      "block_order": ["heading_P9tgFx", "text_9FYaxX", "button_LcUzhy"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
@@ -139,11 +131,7 @@
           }
         }
       },
-      "block_order": [
-        "featured_collection_tG3376",
-        "featured_collection_MLpKqk",
-        "featured_collection_rjgP6y"
-      ],
+      "block_order": ["featured_collection_tG3376", "featured_collection_MLpKqk", "featured_collection_rjgP6y"],
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -158,10 +146,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "multirow_NFJGBt",
-    "rich_text_7pBP83",
-    "collection_list_NJBxEm"
-  ]
+  "order": ["main", "multirow_NFJGBt", "rich_text_7pBP83", "collection_list_NJBxEm"]
 }

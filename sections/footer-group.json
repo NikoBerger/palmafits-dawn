@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -73,11 +73,7 @@
           }
         }
       },
-      "block_order": [
-        "link_list_BTrN3P",
-        "text_waaajw",
-        "text_qCiyYQ"
-      ],
+      "block_order": ["link_list_BTrN3P", "text_waaajw", "text_qCiyYQ"],
       "custom_css": [
         "@media only screen and (max-width: 600px) {.footer {text-align: center; } .list-menu__item {justify-content: center; }}"
       ],

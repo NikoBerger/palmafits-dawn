@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -131,11 +131,9 @@
           }
         }
       },
-      "block_order": [
-        "text_JGRQJH"
-      ],
+      "block_order": ["text_JGRQJH"],
       "settings": {
-        "image": "shopify:\/\/shop_images\/a-mediterranean-scene-with-terracotta-pot.jpg",
+        "image": "shopify://shop_images/a-mediterranean-scene-with-terracotta-pot.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -179,13 +177,9 @@
           }
         }
       },
-      "block_order": [
-        "heading_3H6NpB",
-        "text_YWm6Aa",
-        "buttons_HWat3F"
-      ],
+      "block_order": ["heading_3H6NpB", "text_YWm6Aa", "buttons_HWat3F"],
       "settings": {
-        "image": "shopify:\/\/shop_images\/palma_fits_2.png",
+        "image": "shopify://shop_images/palma_fits_2.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",

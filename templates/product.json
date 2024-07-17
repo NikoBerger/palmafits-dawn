@@ -86,9 +86,8 @@
         "collapsible_tab_Y6JBjj"
       ],
       "custom_css": [
-        ".product__tax {display: none;}",
-        "h1 {font-size: x-large;}",
-        ".product__description,.accordion__content {font-size: small;}"
+        ".icon-with-text {padding: 20px; background-color: #efefef; border-radius: 10px;}",
+        ".icon-with-text__item:last-child {margin-bottom: 0;}"
       ],
       "settings": {
         "enable_sticky_info": false,

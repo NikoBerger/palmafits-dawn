@@ -133,6 +133,47 @@
         "padding_bottom": 24
       }
     },
+    "rich_text_Nr86ex": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TnBc39": {
+          "type": "heading",
+          "settings": {
+            "heading": "Really nice designs! Good quality and fast delivery. Really good customer service.",
+            "heading_size": "h2"
+          }
+        },
+        "caption_J43if4": {
+          "type": "caption",
+          "settings": {
+            "caption": "⭐️⭐️⭐️⭐️⭐️",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "caption_UYgtnQ": {
+          "type": "caption",
+          "settings": {
+            "caption": "- Line, Trustpilot",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TnBc39",
+        "caption_J43if4",
+        "caption_UYgtnQ"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "collection_list_Ug9mH6": {
       "type": "collection-list",
       "blocks": {
@@ -188,6 +229,7 @@
     "image_banner",
     "featured_collection",
     "image_with_text_xtPDhW",
+    "rich_text_Nr86ex",
     "collection_list_Ug9mH6"
   ]
 }

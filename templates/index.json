@@ -21,6 +21,7 @@
         },
         "text": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "We are a Danish clothing company inspired by the warm vibes of the Mediterranean lifestyle.",
             "text_style": "subtitle"
@@ -44,7 +45,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/palm-trees-in-wind.jpg",
+        "image": "shopify:\/\/shop_images\/IMG_9579.heic",
         "image_overlay_opacity": 40,
         "image_height": "medium",
         "desktop_content_position": "middle-center",

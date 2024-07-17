@@ -136,11 +136,12 @@
     "rich_text_Nr86ex": {
       "type": "rich-text",
       "blocks": {
-        "heading_TnBc39": {
-          "type": "heading",
+        "caption_XcXaFN": {
+          "type": "caption",
           "settings": {
-            "heading": "Really nice designs! Good quality and fast delivery. Really good customer service.",
-            "heading_size": "h2"
+            "caption": "Really nice designs! Good quality and fast delivery. Really good customer service.",
+            "text_style": "subtitle",
+            "text_size": "large"
           }
         },
         "caption_J43if4": {
@@ -161,7 +162,7 @@
         }
       },
       "block_order": [
-        "heading_TnBc39",
+        "caption_XcXaFN",
         "caption_J43if4",
         "caption_UYgtnQ"
       ],

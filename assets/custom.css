@@ -78,3 +78,7 @@ aside#main-collection-filters {
   font-size: 80%;
   margin-top: 20px;
 }
+
+.list-menu__item {
+  font-family: 'Fjalla One';
+}

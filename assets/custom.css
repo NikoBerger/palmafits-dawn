@@ -74,8 +74,8 @@ aside#main-collection-filters {
 /* Header menu styling */
 
 [id*='view-all'] {
-  text-decoration: underline;
-  font-size: 80%;
+  text-decoration: underline!important;
+  font-size: 80%!important;
   margin-top: 20px;
 }
 

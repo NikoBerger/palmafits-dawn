@@ -80,5 +80,5 @@ aside#main-collection-filters {
 }
 
 .list-menu__item {
-  font-family: 'Fjalla One';
+  font-family: 'Fjalla One'!important;
 }

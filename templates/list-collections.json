@@ -1,13 +1,96 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
       "type": "main-list-collections",
+      "disabled": true,
       "settings": {
         "title": "Collections",
         "sort": "alphabetical",
-        "image_ratio": "square"
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "collection_list_PepLf9": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_6RPRtt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bikinis"
+          }
+        },
+        "featured_collection_UVTChm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "swimsuits"
+          }
+        },
+        "featured_collection_eRTwxT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "swim-shorts"
+          }
+        },
+        "featured_collection_7dPX9W": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "t-shirts"
+          }
+        },
+        "featured_collection_8GHrN3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sweatshirts"
+          }
+        },
+        "featured_collection_d7bmeL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hats"
+          }
+        },
+        "featured_collection_nTqa3P": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bags"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_6RPRtt",
+        "featured_collection_UVTChm",
+        "featured_collection_eRTwxT",
+        "featured_collection_7dPX9W",
+        "featured_collection_8GHrN3",
+        "featured_collection_d7bmeL",
+        "featured_collection_nTqa3P"
+      ],
+      "settings": {
+        "title": "All collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main",
+    "collection_list_PepLf9"
+  ]
 }

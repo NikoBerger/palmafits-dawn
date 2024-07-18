@@ -21,9 +21,8 @@
         },
         "text": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "We are a Danish clothing company inspired by the warm vibes of the Mediterranean lifestyle.",
+            "text": "Swimwear, clothing and accessories with a Mediterranean vibe!",
             "text_style": "subtitle"
           }
         },

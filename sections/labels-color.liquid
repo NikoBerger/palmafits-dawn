@@ -1,0 +1,44 @@
+<style>
+  {%- for block in section.blocks -%}
+    {%- assign b = block.settings -%}
+    {% assign split = b.title | split: ',' %}
+    {%- for label in split -%}
+      .label-{{ label | strip | remove: "__label:" | handle }} {
+        background-color:{{ b.background }};
+        color:{{ b.color }};
+      }
+    {%- endfor -%}
+  {%- endfor -%}
+</style>
+
+{% schema %}
+{
+  "name": "Product labels",
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Color",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title of label",
+          "info": "Write the exact text after '__label:'"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Text color",
+          "default": "#000"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background color",
+          "default": "#fff"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

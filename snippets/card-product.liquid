@@ -139,13 +139,6 @@
               >
                 {{- 'products.product.on_sale' | t -}}
               </span>
-              {% elsif card_product.tags contains '__label:' %}
-              <span
-                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left label-{{ tag | split: ':' | last | handle }}"
-              >
-                {{ tag | split: ':' | last }}
-              </span>
             {%- endif -%}
           </div>
         </div>
@@ -566,13 +559,6 @@
             >
               {{- 'products.product.on_sale' | t -}}
             </span>
-              {% elsif card_product.tags contains '__label:' %}
-              <span
-                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left label-{{ tag | split: ':' | last | handle }}"
-              >
-                {{ tag | split: ':' | last }}
-              </span>
           {%- endif -%}
         </div>
       </div>

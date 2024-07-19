@@ -140,6 +140,9 @@
                 {{- 'products.product.on_sale' | t -}}
               </span>
             {%- endif -%}
+            {% if card_product.tags contains 'Organic' %}
+            <span class="badge">Organic</span>
+            {% endif %}
           </div>
         </div>
       </div>

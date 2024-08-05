@@ -1,3 +1,6 @@
+{% if section.settings.enable_breadcrumbs %}
+{% render 'breadcrumbs' %}
+{% endif %}
 <section
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
@@ -9,9 +12,6 @@
     data-zoom-on-hover
   {% endif %}
 >
-    {% if section.settings.enable_breadcrumbs %}
-    {% render 'breadcrumbs' %}
-    {% endif %}
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}

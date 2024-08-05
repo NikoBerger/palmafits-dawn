@@ -17,7 +17,7 @@
             {% unless collection.title %}
               {{ 'general.breadcrumb.all' | t }}
             {% else %}
-              {{ collection.title | remove: '[Contract]' }}
+              {{ collection.title }}
             {% endunless %}
           </a>
         {% endif %}

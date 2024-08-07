@@ -1,6 +1,3 @@
-{% if section.settings.enable_breadcrumbs %}
-{% render 'breadcrumbs' %}
-{% endif %}
 <section
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
@@ -87,6 +84,9 @@
           data-url="{{ product.url }}"
           class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
         >
+          {% if section.settings.enable_breadcrumbs %}
+            {% render 'breadcrumbs' %}
+          {% endif %}
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
           {%- for block in section.blocks -%}

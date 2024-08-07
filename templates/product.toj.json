@@ -88,7 +88,8 @@
       ],
       "custom_css": [
         ".icon-with-text {padding: 20px; background-color: #efefef; border-radius: 10px;}",
-        ".icon-with-text__item:last-child {margin-bottom: 0;}"
+        ".icon-with-text__item:last-child {margin-bottom: 0;}",
+        ".product-media-container .media {background-color: #efefef;}"
       ],
       "settings": {
         "enable_sticky_info": false,

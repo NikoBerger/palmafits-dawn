@@ -163,9 +163,11 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
-          {% if card_product.metafields.product-data.subtitle != blank %}
-          <div class="product__subtitle"><h3 style="font-size: 1.2rem;">{{  card_product.metafields.product-data.subtitle }}</h3></div>
-            {% endif %}
+          {% if card_product.metafields['product-data'].subtitle != blank %}
+            <div class="product__subtitle">
+              <h3 style="font-size: 1.2rem;">{{ card_product.metafields['product-data'].subtitle }}</h3>
+            </div>
+          {% endif %}
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
@@ -212,8 +214,9 @@
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             {% assign color_option_exists = false %}
-            {% assign color_count = '' %}
-            {% for option in card_product.options_with_values %}
+            {% assign color_count = 0 %}
+
+            {% for option in product.options_with_values %}
               {% if option.name == 'Color' %}
                 {% assign color_option_exists = true %}
                 {% assign color_count = option.values.size %}

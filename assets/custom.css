@@ -62,11 +62,6 @@ aside#main-collection-filters {
 
 /* Font-styling */
 
-.card__information,
-.product__title {
-  text-transform: uppercase;
-}
-
 .price-item {
   color: #6b705c;
 }

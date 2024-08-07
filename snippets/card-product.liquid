@@ -210,7 +210,7 @@
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             {% assign color_option_exists = false %}
             {% assign color_values = '' %}
-            {% for option in cart_product.options_with_values %}
+            {% for option in card_product.options_with_values %}
               {% if option.name == 'Color' %}
                 {% assign color_option_exists = true %}
                 {% assign color_values = option.values %}

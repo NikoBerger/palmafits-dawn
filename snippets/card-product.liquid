@@ -213,7 +213,7 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
-            {% assign color_option_exists = false %}
+            {% comment %}{% assign color_option_exists = false %}
             {% assign color_count = 0 %}
 
             {% for option in card_product.options_with_values %}
@@ -226,6 +226,7 @@
             {% if color_option_exists and color_count > 1 %}
               <p>{{ color_count }} Colors</p>
             {% endif %}
+            {% endcomment %}
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants.size == 1 and quick_add == 'bulk' %}
                 {% liquid

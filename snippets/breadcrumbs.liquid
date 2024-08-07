@@ -1,12 +1,11 @@
 <div class="Container">
   <nav class="breadcrumb">
-    <ul>
-      <li>
+      <span>
         <a href="{{ shop.url }}" title="{{ shop.name | escape }}">
           {{ 'general.breadcrumb.home' | t }}
         </a>
-      </li>
-      <li>
+      </span>
+      <span>
         {% if product.metafields.custom.main_category != blank %}
           {% assign collection = product.metafields.custom.main_category.value %}
           <span class="breadcrumb-separator">/</span>
@@ -21,35 +20,25 @@
             {% endunless %}
           </a>
         {% endif %}
-      </li>
-      <li>
+      </span>
+      <span>
         <span class="breadcrumb-separator">/</span>
         {{ product.title }}
-      </li>
-    </ul>
+      </span>
   </nav>
 </div>
 
 <style>
   .breadcrumb {
     white-space: nowrap;
-    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: small;
-  }
-
-   .breadcrumb ul {
-     list-style: none;
-     display: flex;
-     align-items: center;
-     flex-wrap: wrap;
-     justify-content: flex-start;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
    }
-  
-  @media (max-width: 768px) {
-    .breadcrumb ul {
-      justify-content: center;
-    }
-  }
   
   .breadcrumb-separator {
     margin-left: 5px;

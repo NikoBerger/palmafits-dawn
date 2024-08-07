@@ -163,8 +163,8 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
-          {% if card_product.metafields.custom.subtitle != blank %}
-          <h4>{% render card_product.metafields.custom.subtitle %}
+          {% if card_product.metafields.product-data.subtitle != blank %}
+          <h4>{% render card_product.metafields.product-data.subtitle %}
             {% endif %}
           <div class="card-information">
             {%- if show_vendor -%}

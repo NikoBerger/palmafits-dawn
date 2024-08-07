@@ -91,6 +91,7 @@
       ],
       "settings": {
         "enable_sticky_info": false,
+        "enable_breadcrumbs": true,
         "color_scheme": "scheme-0c524fe9-3106-4f06-a4e1-dd2716bd2446",
         "media_size": "medium",
         "constrain_to_viewport": true,

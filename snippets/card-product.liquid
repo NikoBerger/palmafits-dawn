@@ -223,7 +223,7 @@
               {% endif %}
             {% endfor %}
 
-            {% if color_option_exists and color_values.size > 1 %}
+            {% if color_option_exists and color_count > 1 %}
               <p>{{ color_count }} Colors</p>
             {% endif %}
             {%- if card_product.quantity_price_breaks_configured? -%}

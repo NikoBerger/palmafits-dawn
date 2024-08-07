@@ -141,7 +141,7 @@
               </span>
             {%- endif -%}
             {% if card_product.tags contains 'Organic' %}
-            <span class="badge" style="color:#ffffff;background-color:#2f442e">Organic</span>
+              <span class="badge" style="color:#ffffff;background-color:#2f442e">Organic</span>
             {% endif %}
           </div>
         </div>
@@ -208,8 +208,17 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
-            {% if product.has_only_default_variant != true %}
-              <span>+ Variants</span>
+            {% assign color_option_exists = false %}
+            {% assign color_values = '' %}
+            {% for option in product.options_with_values %}
+              {% if option.name == 'Color' %}
+                {% assign color_option_exists = true %}
+                {% assign color_values = option.values %}
+              {% endif %}
+            {% endfor %}
+
+            {% if color_option_exists and color_values.size > 1 %}
+              <p>+ Colors</p>
             {% endif %}
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants.size == 1 and quick_add == 'bulk' %}

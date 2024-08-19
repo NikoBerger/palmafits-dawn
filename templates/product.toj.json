@@ -58,6 +58,15 @@
           "settings": {
           }
         },
+        "collapsible_tab_ykxJLX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specifications",
+            "icon": "washing",
+            "content": "{{ product.metafields.product_data.specifications | metafield_tag }}",
+            "page": ""
+          }
+        },
         "size_guide_cVTUNf": {
           "type": "size_guide",
           "settings": {
@@ -83,6 +92,7 @@
         "buy_buttons",
         "icon_with_text_zkTzkw",
         "description",
+        "collapsible_tab_ykxJLX",
         "size_guide_cVTUNf",
         "collapsible_tab_NMQRRP"
       ],

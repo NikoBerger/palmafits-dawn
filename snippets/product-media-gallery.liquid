@@ -219,7 +219,9 @@
       data-shopify-title="{{ product.title | escape }}"
       data-shopify-xr-hidden
     >
-      {% render 'icon-3d-model' %}
+      <span class="svg-wrapper">
+        {{- 'icon-3d-model.svg' | inline_asset_content -}}
+      </span>
       {{ 'products.product.xr_button' | t }}
     </button>
   {%- endif -%}
@@ -239,7 +241,9 @@
         aria-controls="GalleryThumbnails-{{ section.id }}"
         data-step="3"
       >
-        {% render 'icon-caret' %}
+        <span class="svg-wrapper">
+          {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
       </button>
       <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
@@ -319,11 +323,15 @@
             >
               {%- if media.media_type == 'model' -%}
                 <span class="thumbnail__badge" aria-hidden="true">
-                  {%- render 'icon-3d-model' -%}
+                  <span class="svg-wrapper">
+                    {{- 'icon-3d-model.svg' | inline_asset_content -}}
+                  </span>
                 </span>
               {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}
                 <span class="thumbnail__badge" aria-hidden="true">
-                  {%- render 'icon-play' -%}
+                  <span class="svg-wrapper">
+                    {{- 'icon-play.svg' | inline_asset_content -}}
+                  </span>
                 </span>
               {%- endif -%}
               {%- capture thumbnail_id -%}
@@ -365,7 +373,9 @@
         aria-controls="GalleryThumbnails-{{ section.id }}"
         data-step="3"
       >
-        {% render 'icon-caret' %}
+        <span class="svg-wrapper">
+          {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
       </button>
     </slider-component>
   {%- endif -%}

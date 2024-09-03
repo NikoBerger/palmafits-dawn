@@ -46,11 +46,11 @@
           "settings": {
             "layout": "vertical",
             "icon_1": "truck",
-            "heading_1": "Delivery: 5-11 business days",
+            "heading_1": "Levering: 7-9 hverdage",
             "icon_2": "price_tag",
-            "heading_2": "Shipping from €7",
+            "heading_2": "Levering for 49 kr.",
             "icon_3": "return",
-            "heading_3": "30 days return"
+            "heading_3": "30 dages returret"
           }
         },
         "description": {
@@ -61,7 +61,7 @@
         "collapsible_tab_ykxJLX": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Specifications",
+            "heading": "Specifikationer",
             "icon": "washing",
             "content": "{{ product.metafields.product_data.specifications | metafield_tag }}",
             "page": ""
@@ -70,16 +70,16 @@
         "size_guide_cVTUNf": {
           "type": "size_guide",
           "settings": {
-            "heading": "Size guide",
+            "heading": "Størrelsesguide",
             "icon": "ruler"
           }
         },
         "collapsible_tab_NMQRRP": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Delivery",
+            "heading": "Levering",
             "icon": "truck",
-            "content": "<p>We make the product when you order it. Usually, it takes 3–5 days to fulfill an order, after which it’s shipped out. The shipping timedepends on your location, but an estimate for European delivery is 6–8 business days.<\/p>",
+            "content": "<p>Vi fremstiller produktet, når du bestiller det. Normalt tager det 3-5 dage at ekspedere en ordre, hvorefter den sendes ud. Forsendelsestiden afhænger af din placering, men et estimat for levering er 7-9 arbejdsdage.<\/p>",
             "page": ""
           }
         }

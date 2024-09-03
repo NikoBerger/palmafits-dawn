@@ -1,12 +1,12 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -22,11 +22,13 @@
         "text_BxeJjJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Welcome to Palma Fits —where the sun always shines, and time moves at its own pace. Picture this: you're strolling along a cobblestone street, a gentle breeze tousling your hair as you soak in the vibrant colors and carefree atmosphere of the Mediterranean. That's the feeling we aim to capture in everything we do!</p>"
+            "text": "<p>Velkommen til Palma Fits - hvor solen altid skinner, og tiden går i sit eget tempo. Forestil dig det her: Du slentrer langs en brostensbelagt gade. En let brise rusker i dit hår, mens du suger Middelhavets levende farver og ubekymrede atmosfære til dig. Det er den følelse, vi forsøger at indfange i alt, hvad vi gør!<\/p>"
           }
         }
       },
-      "block_order": ["text_BxeJjJ"],
+      "block_order": [
+        "text_BxeJjJ"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
@@ -42,14 +44,16 @@
         "text_JGRQJH": {
           "type": "text",
           "settings": {
-            "text": "<p>Whether you're lounging by the beach, exploring hidden gems in the city, or simply savoring a leisurely meal with loved ones, our products are designed to be your perfect companions on your laid-back adventures.</p>",
+            "text": "<p>Uanset om du slapper af ved stranden, udforsker skjulte perler i byen eller bare nyder et afslappet måltid med venner og familie, er vores produkter designet til at være de perfekte ledsagere på dine afslappede eventyr.<\/p>",
             "text_style": "body"
           }
         }
       },
-      "block_order": ["text_JGRQJH"],
+      "block_order": [
+        "text_JGRQJH"
+      ],
       "settings": {
-        "image": "shopify://shop_images/a-mediterranean-scene-with-terracotta-pot.jpg",
+        "image": "shopify:\/\/shop_images\/a-mediterranean-scene-with-terracotta-pot.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -70,22 +74,22 @@
         "heading_3H6NpB": {
           "type": "heading",
           "settings": {
-            "heading": "No Stock? No Problem!",
-            "heading_size": "h1"
+            "heading": "Ikke noget lager?",
+            "heading_size": "h2"
           }
         },
         "text_YWm6Aa": {
           "type": "text",
           "settings": {
-            "text": "We do things a bit different when it comes to producing and delivering your order.",
+            "text": "Vi gør tingene lidt anderledes, når det handler om at producere og levere din ordre.",
             "text_style": "body"
           }
         },
         "buttons_HWat3F": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Read more about the process",
-            "button_link_1": "shopify://pages/the-process",
+            "button_label_1": "Læs mere om processen",
+            "button_link_1": "shopify:\/\/pages\/the-process",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -93,9 +97,13 @@
           }
         }
       },
-      "block_order": ["heading_3H6NpB", "text_YWm6Aa", "buttons_HWat3F"],
+      "block_order": [
+        "heading_3H6NpB",
+        "text_YWm6Aa",
+        "buttons_HWat3F"
+      ],
       "settings": {
-        "image": "shopify://shop_images/palma_fits_2.png",
+        "image": "shopify:\/\/shop_images\/palma_fits_2.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -109,5 +117,10 @@
       }
     }
   },
-  "order": ["main", "rich_text_eYP38d", "image_with_text_kp39mW", "image_banner_aVrVap"]
+  "order": [
+    "main",
+    "rich_text_eYP38d",
+    "image_with_text_kp39mW",
+    "image_banner_aVrVap"
+  ]
 }

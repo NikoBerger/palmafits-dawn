@@ -24,8 +24,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/online-shopping.jpg",
             "caption": "Step 1",
-            "heading": "Placing an order",
-            "text": "<p>It's just like your typical online shopping experience. Once you've found your must-haves, simply place your order, and we'll take care of the rest!<\/p>",
+            "heading": "Afgivelse af en ordre",
+            "text": "<p>Det er ligesom din typiske online shopping-oplevelse. Når du har fundet dine must-haves, skal du blot afgive din bestilling, så tager vi os af resten!<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -35,8 +35,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/003-printing-on-white.jpg",
             "caption": "Step 2",
-            "heading": "Printing the items",
-            "text": "<p>We don't believe in mass production  and fast-fashion – each item is lovingly crafted only after you've placed your order. Sure, it takes a tad longer, but hey, good things come to those who wait, right?<\/p><p>This step typically takes 3-5 business days, but trust us, it's worth it!<\/p>",
+            "heading": "Produktion",
+            "text": "<p>Vi er imod masseproduktion og fast-fashion - hver enkelt vare bliver først produceret, når du har afgivet din ordre. Det tager selvfølgelig lidt længere tid, men gode ting kommer til dem, der venter. Det tager typisk 3-5 arbejdsdage, men det er helt klart ventetiden værd!<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -46,8 +46,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/shipping-boxes-on-red-brick.jpg",
             "caption": "Step 3",
-            "heading": "Delivering your order",
-            "text": "<p>Your order zips off to you directly from our printing pals located within the European Union, helping us keep our product's carbon footprint low.<\/p>",
+            "heading": "Levering af din ordre",
+            "text": "<p>Din ordre sendes direkte til dig fra vores leverandører i EU, hvilket hjælper os med at holde vores produkters CO2-fodaftryk nede.<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -80,20 +80,21 @@
         "heading_P9tgFx": {
           "type": "heading",
           "settings": {
-            "heading": "Our Delivery Times",
+            "heading": "Vores leveringstider",
             "heading_size": "h1"
           }
         },
         "text_9FYaxX": {
           "type": "text",
           "settings": {
-            "text": "<p>We keep it real with you – because we craft each piece only when ordered, it might take a tad longer to arrive. But trust us, the wait is worth it. We’re always looking af things behind the scenes to bring down the delivery time.<\/p>"
+            "text": "<p>Vi siger det, som det er - fordi vi først fremstiller vores tøj, når det er bestilt, kan det tage lidt længere tid for det at nå frem. Men vores produkter er bestemt ventetiden værd!<\/p>"
           }
         },
         "button_LcUzhy": {
           "type": "button",
+          "disabled": true,
           "settings": {
-            "button_label": "Read more about deliveries",
+            "button_label": "Læs mere om leveringer",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",

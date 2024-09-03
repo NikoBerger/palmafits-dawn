@@ -1,12 +1,12 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_banner": {
@@ -38,7 +38,11 @@
           }
         }
       },
-      "block_order": ["heading", "text", "button"],
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/4.png",
         "image_overlay_opacity": 40,
@@ -94,7 +98,7 @@
         "text_HnEmQV": {
           "type": "text",
           "settings": {
-            "text": "<p>Palma Fits is our dream of adding a dash of Mediterranean flair and inspiration into your everyday style. It all started with our fascination with vibrant hues, timeless elegance, and the enchanting Mediterranean way of life.</p>",
+            "text": "<p>Palma Fits is our dream of adding a dash of Mediterranean flair and inspiration into your everyday style. It all started with our fascination with vibrant hues, timeless elegance, and the enchanting Mediterranean way of life.<\/p>",
             "text_style": "body"
           }
         },
@@ -102,14 +106,18 @@
           "type": "button",
           "settings": {
             "button_label": "Read more",
-            "button_link": "shopify://pages/about-us",
+            "button_link": "shopify:\/\/pages\/about-us",
             "button_style_secondary": false
           }
         }
       },
-      "block_order": ["heading_KWRcMh", "text_HnEmQV", "button_7tKU9M"],
+      "block_order": [
+        "heading_KWRcMh",
+        "text_HnEmQV",
+        "button_7tKU9M"
+      ],
       "settings": {
-        "image": "shopify://shop_images/limestone-hills-peppered-with-houses-overlook-a-sandy-beach.jpg",
+        "image": "shopify:\/\/shop_images\/limestone-hills-peppered-with-houses-overlook-a-sandy-beach.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -148,7 +156,7 @@
         "featured_collection_PDf9nR": {
           "type": "featured_collection",
           "settings": {
-            "collection": "bags"
+            "collection": "tasker"
           }
         }
       },
@@ -158,7 +166,9 @@
         "featured_collection_yPW3Te",
         "featured_collection_PDf9nR"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "Discover our range of products",
         "heading_size": "h2",

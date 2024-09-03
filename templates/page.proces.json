@@ -1,12 +1,12 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -22,10 +22,10 @@
         "row_4JmtdH": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/online-shopping.jpg",
+            "image": "shopify:\/\/shop_images\/online-shopping.jpg",
             "caption": "Step 1",
             "heading": "Placing an order",
-            "text": "<p>It's just like your typical online shopping experience. Once you've found your must-haves, simply place your order, and we'll take care of the rest!</p>",
+            "text": "<p>It's just like your typical online shopping experience. Once you've found your must-haves, simply place your order, and we'll take care of the rest!<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -33,10 +33,10 @@
         "row_Hkd8KN": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/003-printing-on-white.jpg",
+            "image": "shopify:\/\/shop_images\/003-printing-on-white.jpg",
             "caption": "Step 2",
             "heading": "Printing the items",
-            "text": "<p>We don't believe in mass production  and fast-fashion – each item is lovingly crafted only after you've placed your order. Sure, it takes a tad longer, but hey, good things come to those who wait, right?</p><p>This step typically takes 3-5 business days, but trust us, it's worth it!</p>",
+            "text": "<p>We don't believe in mass production  and fast-fashion – each item is lovingly crafted only after you've placed your order. Sure, it takes a tad longer, but hey, good things come to those who wait, right?<\/p><p>This step typically takes 3-5 business days, but trust us, it's worth it!<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -44,16 +44,20 @@
         "row_x3Mett": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/shipping-boxes-on-red-brick.jpg",
+            "image": "shopify:\/\/shop_images\/shipping-boxes-on-red-brick.jpg",
             "caption": "Step 3",
             "heading": "Delivering your order",
-            "text": "<p>Your order zips off to you directly from our printing pals located within the European Union, helping us keep our product's carbon footprint low.</p>",
+            "text": "<p>Your order zips off to you directly from our printing pals located within the European Union, helping us keep our product's carbon footprint low.<\/p>",
             "button_label": "",
             "button_link": ""
           }
         }
       },
-      "block_order": ["row_4JmtdH", "row_Hkd8KN", "row_x3Mett"],
+      "block_order": [
+        "row_4JmtdH",
+        "row_Hkd8KN",
+        "row_x3Mett"
+      ],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -83,7 +87,7 @@
         "text_9FYaxX": {
           "type": "text",
           "settings": {
-            "text": "<p>We keep it real with you – because we craft each piece only when ordered, it might take a tad longer to arrive. But trust us, the wait is worth it. We’re always looking af things behind the scenes to bring down the delivery time.</p>"
+            "text": "<p>We keep it real with you – because we craft each piece only when ordered, it might take a tad longer to arrive. But trust us, the wait is worth it. We’re always looking af things behind the scenes to bring down the delivery time.<\/p>"
           }
         },
         "button_LcUzhy": {
@@ -98,7 +102,11 @@
           }
         }
       },
-      "block_order": ["heading_P9tgFx", "text_9FYaxX", "button_LcUzhy"],
+      "block_order": [
+        "heading_P9tgFx",
+        "text_9FYaxX",
+        "button_LcUzhy"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
@@ -114,7 +122,7 @@
         "featured_collection_tG3376": {
           "type": "featured_collection",
           "settings": {
-            "collection": "clothing"
+            "collection": "toj"
           }
         },
         "featured_collection_MLpKqk": {
@@ -130,7 +138,11 @@
           }
         }
       },
-      "block_order": ["featured_collection_tG3376", "featured_collection_MLpKqk", "featured_collection_rjgP6y"],
+      "block_order": [
+        "featured_collection_tG3376",
+        "featured_collection_MLpKqk",
+        "featured_collection_rjgP6y"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -145,5 +157,10 @@
       }
     }
   },
-  "order": ["main", "multirow_NFJGBt", "rich_text_7pBP83", "collection_list_NJBxEm"]
+  "order": [
+    "main",
+    "multirow_NFJGBt",
+    "rich_text_7pBP83",
+    "collection_list_NJBxEm"
+  ]
 }

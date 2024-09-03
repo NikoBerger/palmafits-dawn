@@ -15,14 +15,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Danish Design. Mediterranean Soul.",
+            "heading": "Dansk design med middelhavsvibes",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Swimwear, clothing and accessories with a Mediterranean vibe!",
+            "text": "Badetøj, tøj og tilbehør med middelhavsstemning!",
             "text_style": "subtitle"
           }
         },
@@ -60,7 +60,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "New In!",
+        "title": "Nyheder!",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -91,21 +91,21 @@
         "heading_KWRcMh": {
           "type": "heading",
           "settings": {
-            "heading": "About Us",
+            "heading": "Om os",
             "heading_size": "h1"
           }
         },
         "text_HnEmQV": {
           "type": "text",
           "settings": {
-            "text": "<p>Palma Fits is our dream of adding a dash of Mediterranean flair and inspiration into your everyday style. It all started with our fascination with vibrant hues, timeless elegance, and the enchanting Mediterranean way of life.<\/p>",
+            "text": "<p>Palma Fits er vores drøm om at tilføje et strejf af middelhavsflair og inspiration til din hverdagsstil. Det hele startede med vores fascination af livlige nuancer, tidløs elegance og den fortryllende middelhavslivsstil.<\/p>",
             "text_style": "body"
           }
         },
         "button_7tKU9M": {
           "type": "button",
           "settings": {
-            "button_label": "Read more",
+            "button_label": "Læs mere",
             "button_link": "shopify:\/\/pages\/om-os",
             "button_style_secondary": false
           }
@@ -170,7 +170,7 @@
 
       ],
       "settings": {
-        "title": "Discover our range of products",
+        "title": "Se vores udvalg af produkter",
         "heading_size": "h2",
         "image_ratio": "square",
         "columns_desktop": 4,
@@ -188,7 +188,7 @@
         "caption_XcXaFN": {
           "type": "caption",
           "settings": {
-            "caption": "Really nice designs! Good quality and fast delivery. Really good customer service.",
+            "caption": "Virkelig fine designs! God kvalitet, og hurtig levering. Rigtig god kundeservice.",
             "text_style": "subtitle",
             "text_size": "large"
           }
@@ -227,7 +227,7 @@
     "featured_collection_zrV4jL": {
       "type": "featured-collection",
       "settings": {
-        "title": "Swimwear",
+        "title": "Badetøj",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -251,60 +251,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "multicolumn_cFqPUn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_n8Y4Py": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_nrBGgW": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_fm6UTm": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_n8Y4Py",
-        "column_nrBGgW",
-        "column_fm6UTm"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -313,7 +259,6 @@
     "image_with_text_xtPDhW",
     "collection_list_Ug9mH6",
     "rich_text_Nr86ex",
-    "featured_collection_zrV4jL",
-    "multicolumn_cFqPUn"
+    "featured_collection_zrV4jL"
   ]
 }

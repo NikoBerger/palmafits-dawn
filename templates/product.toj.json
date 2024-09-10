@@ -99,8 +99,9 @@
       "custom_css": [
         ".icon-with-text {padding: 20px; background-color: #efefef; border-radius: 10px;}",
         ".icon-with-text__item:last-child {margin-bottom: 0;}",
-        ".product-media-container .media {\/*background-color: #efefef;*\/}",
-        ".h4.inline-richtext {font-size: smaller;}"
+        ".product-media-container .media {background-color: #efefef;}",
+        ".h4.inline-richtext {font-size: smaller;}",
+        ".product__media-list {column-gap: 2px; row-gap: 2px;}"
       ],
       "settings": {
         "enable_sticky_info": false,
@@ -112,7 +113,7 @@
         "gallery_layout": "columns",
         "media_position": "left",
         "image_zoom": "hover",
-        "mobile_thumbnails": "show",
+        "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,

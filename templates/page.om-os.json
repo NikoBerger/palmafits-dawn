@@ -45,20 +45,42 @@
         "padding_bottom": 52
       }
     },
-    "image_banner_FV7AJp": {
-      "type": "image-banner",
+    "image_with_text_4E9BnK": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8n3ccP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hvem er vi?",
+            "heading_size": "h1"
+          }
+        },
+        "text_x7FPnU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vi startede Palma Fits i 2024 med en passion for at skabe noget nyt og spændende. Det har altid været vores drøm at dele den stemning, vi oplever ved Middelhavet, med andre. Derfor designer vi tøj og accessories, der giver dig mulighed for at bære sommeren med dig hele året rundt. Vores produkter kommer i små drops, når vi bliver inspireret – ikke efter sæsoner, men når vi føler, at vi har skabt noget, der fortjener en plads i din garderobe.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8n3ccP",
+        "text_x7FPnU"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/all-over-print-recycled-string-bikini-white-front-662ea815e5d2b.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "top-right",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "fixed",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "image": "shopify:\/\/shop_images\/IMG_1028.heic",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_HWnVQb": {
@@ -76,11 +98,18 @@
           "settings": {
             "text": "<p>Vi er stolte af at kunne sige, at vi aktivt forsøger at imod den eksisterende tendens til overproduktion, som præger tøjbranchen, samt den voksende fast-fashion industri. Alle vores varer bliver først produceret, når du bestiller dem. Det betyder, at vi ikke har et lager, og vi bidrager til at reducere spild ved kun at lave det, som rent faktisk skal bruges. Det kan godt give en lidt længere leveringstid, men til gengæld får du et produkt, der er skabt med omtanke og respekt for både designprocessen og miljøet.<\/p>"
           }
+        },
+        "text_6j378e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vores designs bliver trykt og broderet i Europa, hvor vi samarbejder med pålidelige producenter, som hjælper os med at sikre den høje kvalitet, vi ønsker at tilbyde dig. Vi har bevidst valgt ikke at have et fysisk lager, så hver ordre er unikt produceret til dig.<\/p>"
+          }
         }
       },
       "block_order": [
         "heading_6at4BR",
-        "text_fWTFVj"
+        "text_fWTFVj",
+        "text_6j378e"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -173,7 +202,7 @@
   "order": [
     "main",
     "rich_text_eYP38d",
-    "image_banner_FV7AJp",
+    "image_with_text_4E9BnK",
     "rich_text_HWnVQb",
     "image_with_text_kp39mW",
     "image_banner_aVrVap"

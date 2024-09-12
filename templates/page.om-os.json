@@ -24,10 +24,63 @@
           "settings": {
             "text": "<p>Velkommen til Palma Fits - hvor solen altid skinner, og tiden går i sit eget tempo. Forestil dig det her: Du slentrer langs en brostensbelagt gade. En let brise rusker i dit hår, mens du suger Middelhavets levende farver og ubekymrede atmosfære til dig. Det er den følelse, vi forsøger at indfange i alt, hvad vi gør!<\/p>"
           }
+        },
+        "text_Abc8y6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vi designer til dig, der ikke er bange for at udtrykke dig gennem din stil. Vores tøj appellerer til alle, som ønsker at bringe lidt mere sol og varme ind i hverdagen – uanset om du har en særlig tilknytning til Sydeuropa, eller bare elsker de afslappede og stilfulde vibes, som Middelhavet er fuld af.<\/p>"
+          }
         }
       },
       "block_order": [
-        "text_BxeJjJ"
+        "text_BxeJjJ",
+        "text_Abc8y6"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_FV7AJp": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/all-over-print-recycled-string-bikini-white-front-662ea815e5d2b.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "top-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_HWnVQb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6at4BR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Vores værdier",
+            "heading_size": "h1"
+          }
+        },
+        "text_fWTFVj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vi er stolte af at kunne sige, at vi aktivt forsøger at imod den eksisterende tendens til overproduktion, som præger tøjbranchen, samt den voksende fast-fashion industri. Alle vores varer bliver først produceret, når du bestiller dem. Det betyder, at vi ikke har et lager, og vi bidrager til at reducere spild ved kun at lave det, som rent faktisk skal bruges. Det kan godt give en lidt længere leveringstid, men til gengæld får du et produkt, der er skabt med omtanke og respekt for både designprocessen og miljøet.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6at4BR",
+        "text_fWTFVj"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -120,6 +173,8 @@
   "order": [
     "main",
     "rich_text_eYP38d",
+    "image_banner_FV7AJp",
+    "rich_text_HWnVQb",
     "image_with_text_kp39mW",
     "image_banner_aVrVap"
   ]

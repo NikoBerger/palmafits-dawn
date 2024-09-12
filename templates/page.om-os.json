@@ -74,14 +74,14 @@
         "heading_3H6NpB": {
           "type": "heading",
           "settings": {
-            "heading": "Ikke noget lager?",
+            "heading": "Har I ikke noget lager?",
             "heading_size": "h2"
           }
         },
         "text_YWm6Aa": {
           "type": "text",
           "settings": {
-            "text": "Vi gør tingene lidt anderledes, når det handler om at producere og levere din ordre.",
+            "text": "Nej, vi har faktisk ikke noget lager selv. Vi har valgt at gøre tingene lidt anderledes, når det kommer til at producere og levere din ordre.",
             "text_style": "body"
           }
         },

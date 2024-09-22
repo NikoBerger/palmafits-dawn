@@ -782,47 +782,6 @@
   </div>
 </section>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-  const productForm = document.querySelector('form.product-form');
-  if (!productForm) return;
-
-  const variantImages = document.querySelectorAll('.product-gallery__image-wrapper');
-  const variantSelector = productForm.querySelector('[name="id"]');
-
-  function updateVariantImages(selectedVariantTitle) {
-    // Skjul alle billeder
-    variantImages.forEach(function(image) {
-      image.style.display = 'none';
-    });
-
-    // Vis kun billeder, der matcher variantens titel med alt-tagget
-    variantImages.forEach(function(image) {
-      const altTag = image.getAttribute('data-alt').toLowerCase();
-      if (altTag.includes(selectedVariantTitle.toLowerCase())) {
-        image.style.display = 'block';
-      }
-    });
-  }
-
-  // Når en variant vælges, skal billederne opdateres
-  productForm.addEventListener('change', function(event) {
-    const selectedVariant = productForm.querySelector('[name="id"] option:checked');
-    const selectedVariantTitle = selectedVariant.getAttribute('data-variant-title');
-
-    updateVariantImages(selectedVariantTitle);
-  });
-
-  // Start ved første indlæsning af siden, vis billeder for den første variant
-  const initialVariant = productForm.querySelector('[name="id"] option:checked');
-  if (initialVariant) {
-    const initialVariantTitle = initialVariant.getAttribute('data-variant-title');
-    updateVariantImages(initialVariantTitle);
-  }
-});
-
-</script>
-
 {% schema %}
 {
   "name": "t:sections.main-product.name",

@@ -1,34 +1,27 @@
 {% comment %}
   Renders a product media gallery. Should be used with 'media-gallery.js'
   Also see 'product-media-modal'
-
   Accepts:
   - product: {Object} Product liquid object
   - variant_images: {Array} Product images associated with a variant
   - is_duplicate: {Boolean} Prevents rendering uneeded elements and duplicate ids for subsequent instances
-
   Usage:
   {% render 'product-media-gallery', is_duplicate: true %}
 {% endcomment %}
-
 {%- liquid
   if section.settings.hide_variants and variant_images.size == product.media.size
     assign single_media_visible = true
   endif
-
   assign media_count = product.media.size
   if section.settings.hide_variants and media_count > 1 and variant_images.size > 0
     assign media_count = media_count | minus: variant_images.size | plus: 1
   endif
-
   if media_count == 1 or single_media_visible
     assign single_media_visible_mobile = true
   endif
-
   if media_count == 0 or single_media_visible_mobile or section.settings.mobile_thumbnails == 'show' or section.settings.mobile_thumbnails == 'columns' and media_count < 3
     assign hide_mobile_slider = true
   endif
-
   if section.settings.media_size == 'large'
     assign media_width = 0.65
   elsif section.settings.media_size == 'medium'
@@ -36,7 +29,6 @@
   elsif section.settings.media_size == 'small'
     assign media_width = 0.45
   endif
-
   assign id_append = ''
   if is_duplicate
     assign id_append = '-duplicate'
@@ -44,66 +36,66 @@
 -%}
 {%- liquid
   if section.settings.enable_group_media
-    assign optionNames = section.settings.media_grouping_option | split: ','
-    assign option_name_present = false
-    assign image_positions = ''
-    assign group_values = ''
+    assign optionNames = section.settings.media_grouping_option | split:","
+    assign option_name_present = false 
+    assign image_positions = ""
+    assign group_values = ""
     for option in optionNames
       for product_option in product.options
         if option == product_option
-          assign option_index = forloop.index0
-          assign option_name_present = true
-          break
-        endif
+            assign option_index = forloop.index0
+            assign option_name_present = true 
+            break
+        endif 
       endfor
     endfor
     if option_name_present
       for variant in product.variants
-        assign group_values_arr = group_values | split: ','
+        assign group_values_arr = group_values | split:","
         assign value_already_present = false
         for value in group_values_arr
           if value == variant.options[option_index]
-            assign value_already_present = true
-            break
+              assign value_already_present = true  
+              break
           endif
         endfor
-        unless value_already_present
-          assign group_values = group_values | append: variant.options[option_index] | append: ','
-          assign image_positions = image_positions | append: variant.featured_media.position | append: ','
-        endunless
+        unless value_already_present 
+          assign group_values = group_values | append: variant.options[option_index] | append:"," 
+          assign image_positions = image_positions| append: variant.featured_media.position| append:"," 
+        endunless 
       endfor
       assign image_positions = image_positions | split: ','
       assign group_values = group_values | split: ','
-      assign group_values_size = image_positions.size | minus: 1
-      assign data_group_arr = ''
+      assign group_values_size = image_positions.size | minus : 1
+      assign data_group_arr = "" 
       for media in product.media
         for i in (0..group_values_size)
-          if i == 0
-            assign start_position = 1
-          else
+          if i == 0 
+            assign start_position = 1 
+          else 
             assign start_position = image_positions[i] | plus: 0
-          endif
-          assign end_index = i | plus: 1
-          assign end_position = image_positions[end_index] | default: 9999 | plus: 0
-          if media.position >= start_position and media.position < end_position
-            assign data_group_arr = data_group_arr | append: group_values[i] | append: ','
+          endif 
+          assign end_index = i | plus: 1  
+          assign end_position = image_positions[end_index] | default:9999 | plus: 0 
+          if media.position >= start_position and media.position < end_position 
+            assign data_group_arr = data_group_arr | append: group_values[i] | append: "," 
           endif
         endfor
-      endfor
-      assign data_group_arr = data_group_arr | split: ','
+      endfor 
+      assign data_group_arr = data_group_arr | split:","
     endif
   endif
 -%}
 <style>
-  .hide-media {
-    display: none;
-    width: 0;
+  .hide-media{
+    display:none;
+    width:0
   }
 </style>
 <media-gallery
   {% if option_name_present %}
-    media-grouping-enabled
-  {% endif %}
+ media-grouping-enabled
+{% endif %}
   id="MediaGallery-{{ section.id }}{{ id_append }}"
   role="region"
   {% if section.settings.enable_sticky_info %}
@@ -127,7 +119,7 @@
       {%- if product.selected_or_first_available_variant.featured_media != null -%}
         {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
         <li
-          data-media-group="{{ product.selected_or_first_available_variant.options[option_index] }}"
+        data-media-group="{{ product.selected_or_first_available_variant.options[option_index] }}"
           id="Slide-{{ section.id }}-{{ featured_media.id }}{{ id_append }}"
           class="product__media-item grid__item slider__slide is-active{% if single_media_visible %} product__media-item--single{% endif %}{% if featured_media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains featured_media.src %} product__media-item--variant{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
           data-media-id="{{ section.id }}-{{ featured_media.id }}"
@@ -149,38 +141,31 @@
           %}
         </li>
       {%- endif -%}
-      {%- for media in product.media -%}
-        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-          <li
-            data-media-group="{{data_group_arr[forloop.index0]}}"
-            id="Slide-{{ section.id }}-{{ media.id }}{{ id_append }}"
-            class="{% if product.selected_or_first_available_variant.options[option_index] != data_group_arr[forloop.index0] and section.settings.enable_group_media %}hide-media {% endif %} product__media-item grid__item slider__slide{% if single_media_visible %} product__media-item--single{% endif %}{% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
-            data-media-id="{{ section.id }}-{{ media.id }}"
-          >
-            {%- liquid
-              assign media_position = media_position | default: 0 | plus: 1
-              assign lazy_load = false
-              if media_position > 1
-                assign lazy_load = true
-              endif
-            -%}
-            {% render 'product-thumbnail',
-              media: media,
-              media_count: media_count,
-              position: media_position,
-              desktop_layout: section.settings.gallery_layout,
-              mobile_layout: section.settings.mobile_thumbnails,
-              loop: section.settings.enable_video_looping,
-              modal_id: section.id,
-              xr_button: true,
-              media_width: media_width,
-              media_fit: section.settings.media_fit,
-              constrain_to_viewport: section.settings.constrain_to_viewport,
-              lazy_load: lazy_load
-            %}
-          </li>
-        {%- endunless -%}
-      {%- endfor -%}
+      {% for media in product.media %}
+  <li
+    data-media-group="{{data_group_arr[forloop.index0]}}"
+    id="Slide-{{ section.id }}-{{ media.id }}{{ id_append }}"
+    class="{% if product.selected_or_first_available_variant.options[option_index] != data_group_arr[forloop.index0] and section.settings.enable_group_media %}hide-media {% endif %} product__media-item grid__item slider__slide{% if single_media_visible %} product__media-item--single{% endif %}{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+    data-media-id="{{ section.id }}-{{ media.id }}"
+    data-alt="{{ media.alt | escape }}"
+  >
+    {% render 'product-thumbnail',
+      media: media,
+      media_count: media_count,
+      position: media_position,
+      desktop_layout: section.settings.gallery_layout,
+      mobile_layout: section.settings.mobile_thumbnails,
+      loop: section.settings.enable_video_looping,
+      modal_id: section.id,
+      xr_button: true,
+      media_width: media_width,
+      media_fit: section.settings.media_fit,
+      constrain_to_viewport: section.settings.constrain_to_viewport,
+      lazy_load: lazy_load
+    %}
+  </li>
+{% endfor %}
+
     </ul>
     {%- unless is_duplicate -%}
       <div class="slider-buttons no-js-hidden quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %}">
@@ -190,7 +175,7 @@
           name="previous"
           aria-label="{{ 'general.slider.previous_slide' | t }}"
         >
-          {% render 'icon-caret' %}
+          {{- 'icon-caret.svg' | inline_asset_content -}}
         </button>
         <div class="slider-counter caption">
           <span class="slider-counter--current">1</span>
@@ -204,7 +189,7 @@
           name="next"
           aria-label="{{ 'general.slider.next_slide' | t }}"
         >
-          {% render 'icon-caret' %}
+          {{- 'icon-caret.svg' | inline_asset_content -}}
         </button>
       </div>
     {%- endunless -%}
@@ -239,7 +224,7 @@
         aria-controls="GalleryThumbnails-{{ section.id }}"
         data-step="3"
       >
-        {% render 'icon-caret' %}
+        {{- 'icon-caret.svg' | inline_asset_content -}}
       </button>
       <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
@@ -251,7 +236,6 @@
           (min-width: 750px) calc((100vw - 15rem) / 8),
           calc((100vw - 8rem) / 3)
         {%- endcapture -%}
-
         {%- if featured_media != null -%}
           {%- liquid
             capture media_index
@@ -266,7 +250,7 @@
             assign media_index = media_index | plus: 1
           -%}
           <li
-            data-media-group="{{ product.selected_or_first_available_variant.options[option_index] }}"
+          data-media-group="{{ product.selected_or_first_available_variant.options[option_index] }}"
             id="Slide-Thumbnails-{{ section.id }}-0{{ id_append }}"
             class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
             data-target="{{ section.id }}-{{ featured_media.id }}"
@@ -311,7 +295,7 @@
               assign media_index = media_index | plus: 1
             -%}
             <li
-              data-media-group="{{data_group_arr[forloop.index0]}}"
+            data-media-group="{{data_group_arr[forloop.index0]}}"
               id="Slide-Thumbnails-{{ section.id }}-{{ forloop.index }}{{ id_append }}"
               class="{% if product.selected_or_first_available_variant.options[option_index] != data_group_arr[forloop.index0] and section.settings.enable_group_media %}hide-media {% endif %} thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}"
               data-target="{{ section.id }}-{{ media.id }}"
@@ -365,7 +349,7 @@
         aria-controls="GalleryThumbnails-{{ section.id }}"
         data-step="3"
       >
-        {% render 'icon-caret' %}
+        {{- 'icon-caret.svg' | inline_asset_content -}}
       </button>
     </slider-component>
   {%- endif -%}

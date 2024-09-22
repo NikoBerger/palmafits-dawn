@@ -354,3 +354,42 @@
     </slider-component>
   {%- endif -%}
 </media-gallery>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const productForm = document.querySelector('form.product-form');
+  if (!productForm) return;
+
+  const variantImages = document.querySelectorAll('.product__media-item');
+
+  function updateVariantImages(selectedVariantTitle) {
+    // Skjul alle billeder
+    variantImages.forEach(function(image) {
+      image.style.display = 'none';
+    });
+
+    // Vis kun billeder, der matcher variantens titel med data-alt tag
+    variantImages.forEach(function(image) {
+      const altTag = image.getAttribute('data-alt').toLowerCase();
+      if (altTag.includes(selectedVariantTitle.toLowerCase())) {
+        image.style.display = 'block';
+      }
+    });
+  }
+
+  // Opdater billeder, når en variant vælges
+  productForm.addEventListener('change', function(event) {
+    const selectedVariant = productForm.querySelector('[name="id"] option:checked');
+    const selectedVariantTitle = selectedVariant.getAttribute('data-variant-title');
+
+    updateVariantImages(selectedVariantTitle);
+  });
+
+  // Vis billeder for den første variant ved indlæsning af siden
+  const initialVariant = productForm.querySelector('[name="id"] option:checked');
+  if (initialVariant) {
+    const initialVariantTitle = initialVariant.getAttribute('data-variant-title');
+    updateVariantImages(initialVariantTitle);
+  }
+});
+
+</script>

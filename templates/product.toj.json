@@ -79,7 +79,7 @@
           "settings": {
             "heading": "Levering",
             "icon": "truck",
-            "content": "<p>Vi fremstiller produktet, når du bestiller det. Normalt tager det 3-5 dage at ekspedere en ordre, hvorefter den sendes ud. Forsendelsestiden afhænger af din placering, men et estimat for levering er 7-9 arbejdsdage.<\/p>",
+            "content": "<p>Vi fremstiller produktet, når du bestiller det. Normalt tager det 3-5 dage at ekspedere en ordre, hvorefter den sendes ud. Forsendelsestiden afhænger af din placering, men et estimat for levering er 7-9 arbejdsdage.</p>",
             "page": ""
           }
         }
@@ -110,7 +110,7 @@
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "columns",
+        "gallery_layout": "thumbnail",
         "media_position": "left",
         "image_zoom": "hover",
         "mobile_thumbnails": "hide",

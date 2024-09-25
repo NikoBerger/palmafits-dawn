@@ -58,6 +58,13 @@
           "settings": {
           }
         },
+        "popup_TmAd4X": {
+          "type": "popup",
+          "settings": {
+            "text": "Størrelsesguide",
+            "page": "{{ product.metafields.product_data.size_guide.value }}"
+          }
+        },
         "collapsible_tab_ykxJLX": {
           "type": "collapsible_tab",
           "settings": {
@@ -69,6 +76,7 @@
         },
         "size_guide_cVTUNf": {
           "type": "size_guide",
+          "disabled": true,
           "settings": {
             "heading": "Størrelsesguide",
             "icon": "ruler"
@@ -92,6 +100,7 @@
         "buy_buttons",
         "icon_with_text_zkTzkw",
         "description",
+        "popup_TmAd4X",
         "collapsible_tab_ykxJLX",
         "size_guide_cVTUNf",
         "collapsible_tab_NMQRRP"

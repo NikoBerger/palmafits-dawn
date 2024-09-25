@@ -108,7 +108,7 @@
       "custom_css": [
         ".icon-with-text {padding: 20px; background-color: #efefef; border-radius: 10px;}",
         ".icon-with-text__item:last-child {margin-bottom: 0;}",
-        ".product-media-container .media {background-color: #efefef;}",
+        ".product-media-container .media {background-color: #f3f0e8;}",
         ".h4.inline-richtext {font-size: smaller;}",
         ".product__media-list {column-gap: 2px; row-gap: 2px;}"
       ],
@@ -116,9 +116,9 @@
         "enable_sticky_info": false,
         "enable_breadcrumbs": true,
         "color_scheme": "scheme-0c524fe9-3106-4f06-a4e1-dd2716bd2446",
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "media_size": "large",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
         "gallery_layout": "columns",
         "media_position": "left",
         "image_zoom": "hover",

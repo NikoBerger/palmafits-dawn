@@ -2,6 +2,12 @@
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
   data-section="{{ section.id }}"
+  data-product-id="{{ product.id }}"
+  data-update-url="true"
+  data-url="{{ product.url }}"
+  {% if section.settings.image_zoom == 'hover' %}
+    data-zoom-on-hover
+  {% endif %}
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -2249,31 +2255,26 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     },
-    ,
     {
       "type": "header",
-      "content": "Media grouping"
+      "content": "Selected Variant Images"
     },
     {
       "type": "checkbox",
       "id": "enable_group_media",
-      "label": "Enable media grouping",
+      "label": "Enable",
       "default": false
     },
     {
       "type": "text",
       "id": "media_grouping_option",
-      "label": "Media grouping option",
+      "label": "Variant option name",
       "default": "Color",
-      "info": "Group variant media together and attach the first image of each group to a variant."
+      "info":"Attach the first image of each group to a variant."
     },
     {
       "type": "paragraph",
-      "content": "Only one option name at a time, if you need a different option name for specific products please create a new product page template."
-    },
-    {
-      "type": "paragraph",
-      "content": "If you have a multilingual store, you can enter multiple values separated by commas: Color,Colour,Fabre,Couleur"
+      "content": "If you have store in multi-language, you can enter multiple values separated by commas: Color,Colour,Couleur"
     }
   ]
 }

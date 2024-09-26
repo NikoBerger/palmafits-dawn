@@ -164,6 +164,13 @@ if (!customElements.get('product-info')) {
       handleUpdateProductInfo(productUrl) {
         return (html) => {
           const variant = this.getSelectedVariant(html);
+          const variantValues = variant.options
+          const mediaGallery = document.querySelector(`[id^="MediaGallery-${this.dataset.section}"]`)
+          if (mediaGallery.hasAttribute("media-grouping-enabled")) {
+            mediaGallery.querySelectorAll('[data-media-group]').forEach(el => el.classList.add('hide-media'))
+            variantValues.forEach(value => { mediaGallery.querySelectorAll(`[data-media-group="${value}"]`).forEach(el => el.classList.remove('hide-media')) })
+            mediaGallery.querySelectorAll('slider-component').forEach(slider => { slider.initPages() })
+          }
 
           this.pickupAvailability?.update(variant);
           this.updateOptionValues(html);

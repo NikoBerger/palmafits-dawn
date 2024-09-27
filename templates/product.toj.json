@@ -1,12 +1,12 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -14,15 +14,20 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
-        "subtitle_gq9ABD": {
-          "type": "subtitle",
-          "settings": {}
+        "text_fkcpqD": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields[\"product-data\"].subtitle.value }}",
+            "text_style": "body"
+          }
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -71,14 +76,6 @@
             "page": ""
           }
         },
-        "size_guide_cVTUNf": {
-          "type": "size_guide",
-          "disabled": true,
-          "settings": {
-            "heading": "Størrelsesguide",
-            "icon": "ruler"
-          }
-        },
         "collapsible_tab_NMQRRP": {
           "type": "collapsible_tab",
           "settings": {
@@ -91,7 +88,7 @@
       },
       "block_order": [
         "title",
-        "subtitle_gq9ABD",
+        "text_fkcpqD",
         "price",
         "variant_picker",
         "buy_buttons",
@@ -99,7 +96,6 @@
         "description",
         "popup_TmAd4X",
         "collapsible_tab_ykxJLX",
-        "size_guide_cVTUNf",
         "collapsible_tab_NMQRRP"
       ],
       "custom_css": [
@@ -111,7 +107,6 @@
       ],
       "settings": {
         "enable_sticky_info": false,
-        "enable_breadcrumbs": true,
         "color_scheme": "scheme-0c524fe9-3106-4f06-a4e1-dd2716bd2446",
         "media_size": "large",
         "constrain_to_viewport": false,
@@ -130,7 +125,9 @@
     },
     "related-products": {
       "type": "related-products",
-      "custom_css": [".related-products {border-top: 1px solid #efefef;}"],
+      "custom_css": [
+        ".related-products {border-top: 1px solid #efefef;}"
+      ],
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -148,5 +145,8 @@
       }
     }
   },
-  "order": ["main", "related-products"]
+  "order": [
+    "main",
+    "related-products"
+  ]
 }

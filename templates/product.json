@@ -17,6 +17,13 @@
           "settings": {
           }
         },
+        "text_AL7eeE": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields[\"product-data\"].subtitle.value }}",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -80,6 +87,7 @@
       },
       "block_order": [
         "title",
+        "text_AL7eeE",
         "price",
         "variant_picker",
         "quantity_selector",
@@ -108,7 +116,9 @@
         "hide_variants": true,
         "enable_video_looping": true,
         "padding_top": 36,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "enable_group_media": false,
+        "media_grouping_option": "Color"
       }
     },
     "related-products": {
